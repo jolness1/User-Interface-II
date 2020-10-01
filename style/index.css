@@ -1,1 +1,128 @@
 /* Add CSS styling here */
+* {
+  /* border: 1px solid black; */
+}
+
+#main {
+  border: 3px solid black;
+  margin: 20px;
+}
+.header {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 50px;
+  margin-left: 60px;
+}
+
+h2{
+    margin-left: 120px;
+}
+/* .header {
+  width: 100%;
+  height: auto;
+} */
+
+.topnav {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-left: 80px;
+  /* justify-content:center;
+    align-items:center; */
+}
+.topnav .nav {
+  border: 1px solid black;
+  width: 140px;
+  height: 30px;
+  display: inline-block;
+  background: lightgray;
+  flex-flow: row wrap;
+  text-decoration: none;
+  text-align: center;
+  text-justify: middle;
+  line-height: 1.7em;
+  color: black;
+}
+
+#largeimg {
+  margin: 20px;
+}
+
+#side {
+  display: flex;
+  height: 360px;
+  /* margin-block-end: 40px;
+  margin-left: 40px; */
+  margin: 30px 40px 30px 40px;
+}
+
+/* #bigboy {
+
+} */
+
+#blurb {
+  overflow: hidden;
+  display: flex;
+  width: 70%;
+  height: 58%;
+  flex-flow: row nowrap;
+  margin: 6em 10em 6em 10em;
+  /* align-items: flex-end;
+    justify-content: center; */
+}
+#b2 {
+  /* margin-block-start: 10em;
+        margin-block-end: 10em; */
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-flow: row nowrap;
+  justify-content: safe;
+  align-items: safe;
+}
+
+.imgrow {
+  display: flex;
+  justify-content: space-evenly;
+  /* margin:50px; */
+}
+
+.wordrow {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50%;
+}
+
+.small {
+  margin-block-start: 0em;
+  width: 300px;
+  display: inline-block;
+  text-align: center;
+  font-size: 2em;
+}
+
+footer{
+    text-align: center;
+}
+a .btmnav  {
+    width:120px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+.btmnav{
+    display:block;
+    width: 80px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: grey;
+    margin:auto;
+}
