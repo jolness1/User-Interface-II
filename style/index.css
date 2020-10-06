@@ -1,12 +1,17 @@
 /* Add CSS styling here */
+html { 
+  font-size: 62.5%; 
+} 
+
 * {
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
-#main {
-  border: 3px solid black;
-  margin: 20px;
+body{
+  width: 80%;
 }
+
+
 .header {
   display: flex;
   width: 100%;
@@ -14,7 +19,7 @@
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 6rem;
   margin-left: 60px;
 }
 
@@ -30,14 +35,12 @@ h2{
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  margin-left: 80px;
-  /* justify-content:center;
-    align-items:center; */
 }
 .topnav .nav {
   border: 1px solid black;
-  width: 140px;
-  height: 30px;
+  width: 14rem;
+  height: 3rem;
+  font-size:2rem;
   display: inline-block;
   background: lightgray;
   flex-flow: row wrap;
@@ -48,62 +51,61 @@ h2{
   color: black;
 }
 
-#largeimg {
-  margin: 20px;
-}
-
-#side {
+#main{
   display: flex;
-  height: 360px;
-  /* margin-block-end: 40px;
-  margin-left: 40px; */
-  margin: 30px 40px 30px 40px;
+  flex-flow: row wrap;
 }
 
-/* #bigboy {
+#bigboy{
 
-} */
+  width: 49%;
+  height: auto;
+}
+
 
 #blurb {
-  overflow: hidden;
+  width: 50%;
+  height: auto;
   display: flex;
-  width: 70%;
-  height: 58%;
-  flex-flow: row nowrap;
-  margin: 6em 10em 6em 10em;
-  /* align-items: flex-end;
-    justify-content: center; */
+  text-align: center;
+  justify-content: center;
+  
 }
-#b2 {
-  /* margin-block-start: 10em;
-        margin-block-end: 10em; */
 
+#b2{
+  width: 60%;;
+  justify-content: center;
+  font-size: 3.0rem;
+}
+
+
+#rowrowrow{
   display: flex;
-  width: 100%;
-  height: 100%;
-  flex-flow: row nowrap;
-  justify-content: safe;
-  align-items: safe;
+  flex-flow: row wrap;
+  justify-items: auto;
 }
 
 .imgrow {
   display: flex;
-  justify-content: space-evenly;
-  /* margin:50px; */
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 20%;
 }
 
-.wordrow {
-  display: flex;
-  justify-content: space-evenly;
-  height: 50%;
+.tileimg{
+  width: 15rem;;
+  margin:1vw;
 }
+
 
 .small {
   margin-block-start: 0em;
-  width: 300px;
+  width: 20vw;
   display: inline-block;
   text-align: center;
-  font-size: 2em;
+  font-size: 2.4rem;
 }
 
 footer{
@@ -118,11 +120,100 @@ a .btmnav  {
 }
 
 .btmnav{
-    display:block;
-    width: 80px;
+    display:flex;
+    width: 20rem;
+    height:5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: 2rem;
     background-color: grey;
     margin:auto;
+}
+
+@media(max-width:768px){
+
+  body{
+    width:100%;
+  }
+
+  h1{
+    text-align: center;
+    margin:0;
+  }
+  
+  
+  .topnav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin:0;
+
+  }
+
+  #main{
+    display: flex;
+    flex-flow: column nowrap;
+    width:100%;
+  }
+
+  #blurb {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+  }
+  
+  #b2{
+    width: 100%;
+    justify-content: center;
+    font-size: 3.0rem;
+  }
+
+  #bigboy{
+    /* display: inline; */
+    width: 100%;
+    height: auto;
+  }
+  
+  #titleimg {
+    width: 50%;
+    height: auto;
+  }
+}
+
+
+@media(max-width:600px){
+  
+  #rowrowrow{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .imgrow {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 40%;
+  }
+  
+  .tileimg{
+    width: 15rem;;
+    margin:1vw;
+  }
+  
+  
+  .small {
+    margin-block-start: 0em;
+    width: 20vw;
+    display: inline-block;
+    text-align: center;
+    font-size: 2.4rem;
+  }
+
 }
